@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+$originalImgUrl: "/wordpress/wp-content/themes/project/original/img/why";
+    
+* {
+  box-sizing: border-box;
+  overflow-wrap : break-word;
+}
+
+
+
+.utility {
+  #page_whyokwave { 
+    &.wrap {
+      max-width: 100%;
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+      margin: 0 0;
+    }
+
+    .contents_whyokwave {
+      padding:0 0 ($base-margin * 1.5) ;
+      text-align: center;
+
+      dl {
+        padding:0;
+        margin: 0;
+      }
+            
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      figure {
+        margin: 0 0;
+      }
+
+      article {
+        > section {
+          padding:($base-margin * 3) ($base-margin * 1.5)  ($base-margin * 6) ;
+
+          &:nth-of-type(even) {
+            background: $base-gray-100;
+
+            .section_label {
+              background: $base-gray-100;
+            }
+          }
+
+          @include screen-up(md){
+            padding-top:$base-margin * 6;
+            padding-bottom:$base-margin * 6;
+          }
+
+          &:first-of-type {
+            padding-top: $base-margin * 4;
+            padding-bottom: $base-margin * 7;
+          }
+
+          &.section {
+            position: relative;
+          }
+        }
+      }
+
+      h3 {
+        position: relative;
+        padding-bottom: $base-margin * 0.5;
+        margin-bottom: $base-margin * 2;
+        font-size: $base-font-size-md;
+        font-weight: $font-weight-bold;
+    
+        @include screen-up(md){
+          margin-bottom: $base-margin * 3;
+          font-size: $base-font-size-lg;
+        }
+    
+        &::after {
+          position: absolute;
+          bottom:0;
+          left: 50%;
+          display: inline-block;
+          width: $base-margin * 6;
+          height: 3px;
+          margin-left:-($base-margin * 6) / 2;
+          content: "";
+          background: $answer-color;
+        }
+      }
+    
+      p {
+        margin-top: $base-margin;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .entry__title {
+      display: none;
+    }
+
+    .section_label {
+      $size:132px ;
+
+      position: absolute;
+      top:-($size / 2) ;
+      left: calc(50% - #{$size / 2});
+      width: $size;
+      height: $size;
+      font-weight: $font-weight-bold;
+      line-height: $size / 2;
+      background: $white;
+      border-radius: 100% 100% 0 0;
+
+      &::before {
+        box-sizing: border-box;
+        display: block;
+        width: $size ;
+        height: $size ;
+        content: "";
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        top: 10px;
+        left: calc(50% - #{$size / 2});
+        display: block;
+        width: 100%;
+        font-size: $base-font-size_sm;
+        content: "Section";
+      }
+
+      em {
+        position: absolute;
+        top: 25%;
+        display: block;
+        width: 100%;
+        font-size: $base-font-size-xlg;
+        font-style: normal;
+      }
+    }
+
+
+    // OKWAVEが大切にしていること
+    .headline_box {
+      position: relative;
+      border-bottom: 6px solid $answer-color;
+
+      .main_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: auto;
+          height: 100%;
+          margin-right: auto;
+          margin-left:auto;
+        }
+      }
+
+      h2 {
+        position: relative;
+        display: inline-block;
+        margin-top: $base-margin;
+        font-size: $base-font-size-xlg;
+        font-weight: $font-weight-bold;
+
+        @include screen-up(md){
+          font-size: 48px;
+        }
+
+        &::before ,&::after{
+          position: absolute;
+          display: inline-block;
+          width: 18px;
+          height: 1em;
+          content: "";
+          border-left: 3px solid $answer-color;
+        }
+
+        &::before {
+          top: 20%;
+          left:  -16px;
+          transform: rotate(-24deg);
+        }
+
+        &::after {
+          top: 28%;
+          right: -22px;
+          transform: rotate(24deg);
+        }
+      }
+    }
+
+    // OKWAVEで何ができるの？
+    .cando_box {
+      .section_label {
+        &::before {
+          border: 6px solid #3ad;
+
+          /* Halve the circle */
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+
+          /* Rotate the circle */
+          transform: rotate(-45deg);
+        }
+      }
+
+      .can_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include screen-up(md){
+          flex-direction: row;
+        }
+
+        > div {
+          padding:$base-margin 0;
+
+          img {
+            width: 40%;
+            height: auto;
+
+            @include screen-up(md){
+              width: 100%;
+            }
+          }
+
+          @include screen-up(md){
+            width: $base-margin * 16;
+            padding:0 $base-margin;
+          }
+        }
+
+        h4 {
+          margin-top: $base-margin;
+          font-weight: $font-weight-bold;
+        }
+
+        figure {
+          height: 16px * 6.5;
+          margin-right: auto;
+          margin-left: auto;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        p {
+          margin-top: $base-margin;
+          font-size: $base-font-size-sm;
+        }
+      }
+    }
+
+    .think_box {
+      figure {
+        width: 16px * 11.5;
+        margin-top: $base-margin * 1.5;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      section {
+        padding:$base-margin  *1.5;
+        margin-top: $base-margin * 2.5;
+        margin-bottom: $base-margin * 2.5;
+        font-size: $base-font-size-sm;
+        border: 2px dashed $answer-color;
+
+        @include screen-up(md){
+          width: 16px * 27;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        h5 {
+          font-size: $base-font-size-sm;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      @include screen-down(md){
+        .compassion{
+          p {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .jp_link_block {
+      width: 300px;
+      margin-top: $base-margin * 2;
+      margin-right: auto;
+      margin-left: auto;
+
+      a {
+        display: inline-block;
+        font-weight: $font-weight-bold;
+
+        &.button {
+          box-sizing: content-box;
+          padding:0 ($base-margin * 1.5);
+          line-height: 64px - 4;
+          border-radius: 32px;
+                    
+          &.cl_red {
+            color: $base-red-color;
+            border: $base-red-color 2px solid;
+          }
+        }
+
+        &.register {
+          padding:4px;
+          margin-top: #{($base-margin * 1.5) - 4px };
+        }
+      }
+    }
+
+    .ending {
+      @include screen-down(sm){
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,472 @@
+@charset "utf-8";
+$gold-color :#d3b822;
+
+
+.award {
+  &.single_award { 
+    .wrap {
+      &.layout20{
+        .main_contents {
+          max-width: $frame-max-width;
+          padding: 32px 24px;
+          margin-right: auto;
+          margin-left: auto;
+
+          @include screen-up(lg){
+            padding: 32px 16px;
+          }
+        }
+      }
+
+      .monthly_user_body_text {
+        margin-top: $base-margin * 2;
+      }
+    }
+  }
+}
+
+.layout20 {
+  .post_contents {
+    text-align: center;
+  }
+
+  .headline {
+    padding-top: $base-margin ;
+
+    @include screen-up(lg){
+      padding-top: $base-margin * 4;
+    }
+
+    hgroup {
+      position: relative;
+      display: inline-block;
+      padding:0 64px;
+
+      @include screen-down(sm){
+        padding:0 42px;
+      }
+
+      @include screen-up(lg){
+        padding:0 124px;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: url("/wp-content/themes/project/original/img/award/ornament.svg")  0 bottom no-repeat;
+        background-position: left;
+        background-size: auto 98%;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+        transform: scale(-1, 1);
+      }
+    }
+
+    h1,h2 {
+      font-weight: $font-weight-bold;
+      color: $gold-color;
+    }
+
+    h1 {
+      font-size: 80px;
+      line-height: 1;
+
+      @include screen-up(lg){
+        font-size: 140px;
+      }
+
+      span {
+        display: block;
+        font-size: $base-font-size;
+        line-height: 1.4;
+                
+        @include screen-up(lg){
+          font-size: 40px;
+        }
+      }
+    }
+
+    h2 {
+      margin-top: $base-margin  * 0.5;
+      font-size:$base-font-size_xsm;
+      font-weight: $font-weight-normal;
+
+      @include screen-up(lg){
+        margin-top: $base-margin;
+        font-size: $base-font-size;
+      }
+    }
+
+    p {
+      margin-top: $base-margin * 2;
+    }
+  }
+
+  .list {
+    &_award {
+      padding: 0;
+      margin:0;
+        
+      li {
+        margin: 0;
+        list-style: none;
+
+        b {
+          font-size: $base-font-size-sm;
+
+          @include screen-up(md){
+            font-size: $base-font-size;
+          }
+        }
+
+        &:empty {
+          display: none;
+
+          @include screen-up(md){
+            display:inline-block;
+          }
+        }
+      }
+        
+      figure {
+        width: 64px;
+        height: 64px;
+        overflow: hidden;
+        border:1px solid $base-gray-300;
+        border-radius: 50%;
+        
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    // 順位付きのリスト
+    &_user_rank {
+      margin-right: -($base-margin * 0.5);
+      margin-left: -($base-margin * 0.5);
+
+      li {
+        display: inline-block;
+        width: 32%;
+        padding:0 ($base-margin * 0.5);
+        vertical-align: top;
+
+        @include screen-up(md){
+          width: auto;
+          padding:0 $base-margin * 2;
+        }
+      }
+
+      dl {
+        padding: 0;
+        margin: $base-margin 0;
+
+        * {
+          display: block;
+          padding: 0;
+          margin: 0;
+          clear: both;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      dt {
+        &::after {
+          content: "位";
+        }
+      }
+
+      figure {
+        margin-right: auto;
+        margin-left:auto;
+      }
+
+      &_under {
+        margin-top: $base-margin;
+
+        @include screen-up(md){
+          width: 88%;
+          margin: $base-margin auto 0;
+        }
+
+        li {
+          width: 49%;
+          padding:0 ;
+          text-align: left;
+                    
+
+          @include screen-up(md){
+            width: 21%;
+            text-align: center;
+          }
+        }
+
+        dl {
+          margin: $base-margin * 0.5;
+
+          * {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            clear: none;
+            font-weight: $font-weight-bold;
+          }
+        }
+      }
+    }
+
+    // 順位付きのリスト
+    &_user_qa_rank {
+      margin-right: -($base-margin * 0.5);
+      margin-left: -($base-margin * 0.5);
+
+      li {
+        padding:0 ;
+        padding:0 ($base-margin * 0.5);
+
+        @include screen-up(md){
+          display: inline-block;
+          width: 32%;
+          padding:0 $base-margin ;
+          vertical-align: top;
+        }
+      }
+
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: $base-margin 0;
+        text-align: left;
+
+        @include screen-up(md){
+          flex-direction: column;
+          justify-content: flex-start;
+          text-align: center;
+        }
+
+        * {
+          display: block;
+          padding: 0;
+          margin: 0;
+          clear: both;
+          font-weight: $font-weight-bold;
+
+          @include screen-up(md){
+            clear: both;
+          }
+        }
+      }
+
+      dt {
+        width: 3em;
+
+        &::after {
+          content: "位";
+        }
+      }
+
+      dd {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 3em);
+
+        @include screen-up(md){
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      figure {
+        margin-right: $base-margin;
+
+        @include screen-up(md){
+          margin-right: auto;
+          margin-left:auto;
+        }
+      }
+
+      &_under {
+        margin-top: $base-margin;
+
+        @include screen-up(md){
+          margin: $base-margin auto 0;
+        }
+
+        li {
+          padding:0 ;
+          margin-top: $base-margin;
+          text-align: left;
+                    
+          @include screen-up(md){
+            width: 49%;
+            text-align: center;
+          }
+        }
+
+        dl {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          margin: $base-margin * 0.5;
+
+          * {
+            padding: 0;
+            margin: 0;
+            font-weight: $font-weight-bold;
+          }
+
+
+          dd {
+            display: block;
+            width: calc(100% - 3em);
+            text-align: left;
+
+            @include screen-up(md){
+              text-align: center;
+            }
+          }
+        }
+
+        p {
+          text-align: left;
+
+          @include screen-up(md){
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &_rank {
+      @include screen-up(lg){
+        display: inline-block;
+        margin:$base-margin auto 0;
+      }
+
+      li {
+        margin-top:$base-margin ;
+      }
+
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        * {
+          padding: 0;
+          margin: 0;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      dt {
+        width: 3em;
+                
+        @include screen-up(md){
+          font-size: $base-font-size-md;
+        }
+                
+
+        &::after {
+          content: "位";
+        }
+      }
+
+      dd {
+        width: calc(100% - 3em);
+        text-align: left;
+
+        @include screen-up(md){
+          font-size: $base-font-size-md;
+        }
+      }
+    }
+
+    &_pickup {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: $base-margin;
+
+      @include screen-up(md){
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+            
+
+      li {
+        width:  49%;
+        padding:0 $base-margin;
+        margin-top: $base-margin;
+                
+
+        @include screen-up(md){
+          width: 24%;
+        }
+      }
+    }
+  }
+
+  //
+  // .pickup_list { }
+
+  .award {
+    &_block {
+      margin-top: $base-margin * 4;
+      overflow: hidden;
+
+      @include screen-up(lg){
+        margin-top: $base-margin * 7;
+      }
+
+      h3 {
+        font-size: $base-font-size-md;
+        font-weight: $font-weight-bold;
+        color: $gold-color;
+
+        @include screen-up(md){
+          font-size: $base-font-size-lg;
+        }
+
+        &::before {
+          display: inline-block;
+          width: 40px;
+          height: 32px;
+          margin-right: $base-margin * 0.5;
+          font-weight: $font-weight-bold;
+          vertical-align: text-bottom;
+          content: "";
+          background: url("/wp-content/themes/project/original/img/award/crown.svg") 0 0 no-repeat;
+        }
+
+        + p {
+          margin-top: $base-margin;
+        }
+      }
+
+      h4 {
+        margin-top: $base-margin * 2;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}

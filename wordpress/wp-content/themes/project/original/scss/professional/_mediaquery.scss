@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+// mediaquery
+// -----------------------------------------------
+// 基準が375pxのiphone
+// max sizeで
+// sm = 360px
+// min sizeで
+// md = 560px (タブレット)
+// lg = 960px （PC小型 / タブレット大型）
+// xlg = 1280px （PC大型）
+
+// variables
+// -----------------------------------------------
+// サイズ
+$screen-sm: 361px;
+$screen-md: 560px;
+$screen-lg: 960px;
+$screen-xlg: 1280px;
+
+$breakpointsUp:(
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xlg: $screen-xlg,
+) !default;
+
+$screen-max-sm: 360px;
+$screen-max-md: 559px;
+$screen-max-lg: 959px;
+$screen-max-xlg: 1279px;
+
+$breakpointsDown:(
+  sm: $screen-max-sm,
+  md: $screen-max-md,
+  lg: $screen-max-lg,
+  xlg: $screen-max-xlg,
+) !default;
+
+// mixin
+// -----------------------------------------------
+//基本はmin-widthのこっちを使う
+@mixin screen-up($breakpoint) {
+  @media (min-width: #{map-get($breakpointsUp, $breakpoint)}) {
+    @content;
+  }
+}
+
+//最小サイズはmax-widthで使う
+@mixin screen-down($breakpoint) {
+  @media (max-width: #{map-get($breakpointsDown, $breakpoint)}) {
+    @content;
+  }
+}
+
+// 下限上限両方指定する場合
+@mixin screen-between($breakpoint1, $breakpoint2) {
+  @media (min-width: #{map-get($breakpointsUp, $breakpoint1)}) and (max-width: #{map-get($breakpointsDown, $breakpoint2)}) {
+    @content;
+  }
+}
+
+// div{
+//   @include screen-up(md){
+//     font-size:11px;font-sizefont-size
+//   }
+
+//   @include screen-down(sm){
+//     font-size:11px;font-sizefont-size
+//   }
+
+//   @include screen-between(sm,lg){
+//     font-size:11px;font-sizefont-size
+//   }
+// }

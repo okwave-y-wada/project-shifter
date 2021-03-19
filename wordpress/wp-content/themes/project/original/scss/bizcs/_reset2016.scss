@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* __________________________________________________ Common Set */
+*{	padding:0;
+  margin:0;
+  zoom:1;
+}
+
+html {padding: 0;
+  margin: 0;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;
+  margin: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal;
+}
+
+table {	border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption,th {text-align: left;
+}
+
+q::before,q::after {	content: '';
+}
+
+object,embed {vertical-align: top;
+}
+
+hr,legend {padding:0;
+  margin:0;
+  visibility:hidden;
+}
+
+img,abbr,acronym,fieldset {padding: 0;
+  margin: 0;
+  border:0;
+}
+
+img{ line-height:0;
+  vertical-align: middle;
+}
+
+ul,li,ol{padding:0;
+  margin:0;
+  font-style:0;
+  font-weight:0;
+  list-style-type:none;
+}
+
+table,td,th{border:none;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var,dl,dt,dd {font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,em,address,p,th {	padding:0;
+  margin:0;
+  font-size:normal;
+  font-style:normal;
+  font-weight:normal;
+}
+
+h1,h2,h3,h4,h5,h6 {padding:0;
+  margin:0;
+  font-size: 100%;
+  font-style:normal;
+  font-weight:normal;
+}
+
+/* link */
+a:link { color: #06c;
+  text-decoration: none;
+  outline: none
+}
+
+a:visited { color: #832dab
+}
+/* a:hover { color: #209dd6; text-decoration: underline}
+*/a:active, a:focus { color: #06c
+}
+
+header, footer, nav, article, section, aside{ display:block;
+}
+
+a:hover img { filter: alpha(opacity=80);
+  -moz-opacity:0.8;
+  opacity:0.8;
+}
+
+textarea{resize: vertical;
+}
+
+
+html > /**/body {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  min-width: 320px;
+  font-family: Arial, Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #fff;
+  border: none;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}

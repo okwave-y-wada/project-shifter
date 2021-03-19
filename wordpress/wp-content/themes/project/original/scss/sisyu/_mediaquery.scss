@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+// media-query
+// -----------------------------------------------
+
+// variables
+// -----------------------------------------------
+// サイズ
+$screen-sm: 490px; // maxで360にしたいので
+$screen-md: 769px;
+$screen-lg: 863px;
+
+$breakpointsUp:(
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+) !default;
+
+$screen-max-sm: 489px;
+$screen-max-md: 768px;
+$screen-max-lg: 862px;
+
+$breakpointsDown:(
+  sm: $screen-max-sm,
+  md: $screen-max-md,
+  lg: $screen-max-lg,
+) !default;
+
+// mixin
+// -----------------------------------------------
+//基本はmin-widthのこっちを使う
+@mixin screen-up($breakpoint) {
+  @media (min-width: #{map-get($breakpointsUp, $breakpoint)}) {
+    @content;
+  }
+}
+
+//最小サイズはmax-widthで使う
+@mixin screen-down($breakpoint) {
+  @media (max-width: #{map-get($breakpointsDown, $breakpoint)}) {
+    @content;
+  }
+}
+
+// 下限上限両方指定する場合
+@mixin screen-between($breakpoint1, $breakpoint2) {
+  @media (min-width: #{map-get($breakpointsUp, $breakpoint1)}) and (max-width: #{map-get($breakpointsDown, $breakpoint2)}) {
+    @content;
+  }
+}
+
+// div{
+//   @include screen-up(md){
+//     font-size:11px;
+//   }
+
+//   @include screen-down(sm){
+//     font-size:11px;
+//   }
+
+//   @include screen-between(sm,lg){
+//     font-size:11px;
+//   }
+// }

@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+// WP全体の共通変数
+
+// 画像系 ------------------------------------------
+// 共通画像ディレクトリ
+$imageCommonURL : "../original/img/common";
+
+// 企業ロゴ 白（２段構成のロゴ） small
+$logoCompanySmallWhite : $imageCommonURL  + "/logo_company_s_white.svg";
+
+// 企業ロゴ 赤
+$logoCompanyRed : $imageCommonURL  + "/logo_company_red.svg";
+
+// OKWAVE 赤 small
+$logoOkwaveSmallRed : $imageCommonURL  + "/logo_okwave_s_red.svg";
+// OKWAVE 赤 small マージンなし
+$logoOkwaveSmallNoMarginRed : $imageCommonURL  + "/logo_okwave_60max_height_nomargin.svg";
+
+// layout
+$frame-max-width: 1072px;
+
+// text ------------------------------------------
+$font-weight-normal:300;
+$font-weight-bold:500;
+$base-font-size-xlg:26px;
+$base-font-size-lg:24px;
+$base-font-size-md:20px;
+$base-font-size:16px;
+$base-font-size-sm:13px;
+$base-font-size_xsm:10px;
+
+$base-line-height:1.6;
+$base-hover-opacity:0.64;
+$base-hover-transition:0.3s;
+
+// margin ------------------------------------------
+$base-margin:16px;
+
+// Color ------------------------------------------
+$base-shadow: 0 1px 2px rgba(0,0,0,0.15);
+$base-color:#333;
+
+// link color リンク色
+$base-link-color: #06c !default;
+$base-link-hover-color: 0.64 !default;
+$base-link-text-decoration: none !default;
+$base-link-transition-speed: 0.2s !default;
+
+
+$white: #fff !default;
+$base-gray-100:#f7f7f7 !default;
+$base-gray-300:#ddd !default;
+$base-gray-500:#9e9e9e !default;
+$base-gray-700:#656565 !default;
+$base-gray-900:#333 !default;
+
+// レッド
+$ci-color: #f50a00 !default;
+$base-red-color: $ci-color !default;
+$warning-color: #f00 !default;
+
+// Brown ブラウン （サイトメインカラー）
+$headline-color: #867b5f !default; // 現在：タイトル
+
+// question 質問カラー（オレンジ）
+$question-color: #e69e3a !default;
+
+// answer 回答カラー（青）
+$answer-color: #3ad !default;
+
+
+$base-border-color: $base-gray-300;
+$base-border-radius: 4px !default;
+$btn-border-width: 1px; // ボーダーの太さ: 1px
+
+$btn-font-size: $base-font-size; // 基準のフォントサイズ 15px
+$btn-font-color: $base-color;
+$btn-square-border-radius: $base-border-radius;
+$btn-square-font-color: $base-color;
+$list-button-font-color: $base-color;
+$btn-border-color: $base-border-color;
+
+// button
+@mixin SquareButtonType(){
+  display: inline-block;
+  min-width: 256px;
+  height: 42px;
+  padding: 0 ($base-margin);
+  font-size: $btn-font-size;
+  font-weight: $font-weight-bold;
+  line-height: 42px;
+  color: $btn-font-color;
+  text-align: center;
+  text-decoration: $base-link-text-decoration;
+  border:$btn-border-width solid $btn-border-color;
+  border-radius: $btn-square-border-radius;
+
+  @include screen-down(sm) {
+    padding: 0 4px;
+    font-size: $base-font-size-sm;
+  }
+
+  @content;
+}
+//@include SquareButtonTypePc(){}
+@mixin SquareButtonTypePc(){
+  min-width: 272px;
+  height: 48px;
+  font-size: $base-font-size;
+  line-height: 47px;
+  @content;
+}

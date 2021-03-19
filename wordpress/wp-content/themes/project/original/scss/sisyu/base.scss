@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+// variable --------------------------------------------
+
+$imageURL : "../../original/img/sisyu";
+$hover-opacity:0.64;
+$hover-transition:0.3s;
+$base-font-color:#393b40;
+$base-gray:#393b39;
+$base-light-gray:#f4f4f4;
+$link-color: #1698eb;  //$base-font-color
+$focus-color: #3aabf3;
+$navigation-width:224px;
+
+@mixin linkArrow {
+  position: relative;
+  @content;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-top: -5px;
+    line-height: 1;
+    content: "";
+    border: 1px solid $base-gray;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+@mixin linkArrowBefore {
+  &::before {
+    left: 0;
+    transform: rotate(-45deg);
+    @content;
+  }
+}
+
+@mixin linkArrowAfter {
+  &::before {
+    right: 0;
+    transform: rotate(135deg);
+    @content;
+  }
+}
+
+
+@import "../normalize";
+@import "../site_common";
+@import "reset";
+@import "mediaquery";
+// @import "old_style/jquery.bxslider";
+// @import "old_style/lightbox.min";
+// @import "old_style/ctm_bxslider";
+@import "common";
