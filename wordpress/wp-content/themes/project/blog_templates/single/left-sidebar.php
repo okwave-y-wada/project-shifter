@@ -10,26 +10,21 @@
  */
 ?>
 <div class="container">
-	<div class="row">
-		<div class="col-md-9 col-md-push-3">
-			<main id="main" role="main">
+	<main id="main" role="main">
 
-				<?php get_template_part( 'modules/breadcrumbs' ); ?>
-				<?php
-				if ( is_404() ) {
-					get_template_part( 'content', 'none' );
-				} else {
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'content', 'single' );
-					}
-				}
-				?>
-				
-			<!-- end #main --></main>
-		<!-- end .col-md-9 --></div>
-		<div class="col-md-3 col-md-pull-9">
-			<?php get_sidebar(); ?>
-		<!-- end .col-md-3 --></div>
-	<!-- end .row --></div>
+		<?php get_template_part( 'modules/breadcrumbs' ); ?>
+		<?php
+		if ( is_404() ) {
+			get_template_part( 'content', 'none' );
+		} else {
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'content', 'single' );
+			}
+		}
+		?>
+
+	<!-- end #main --></main>
+
+	<?php get_sidebar(); ?>
 <!-- end .container --></div>

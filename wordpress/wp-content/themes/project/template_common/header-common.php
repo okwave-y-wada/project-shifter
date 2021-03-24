@@ -41,7 +41,7 @@
 <?php } else { ?>
 <meta property="og:description" content="<?php echo category_description(); ?>">
 <?php } ?>
- 
+
 <?php /* og:locale（日本語を指定）  */ ?>
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:widgets:csp" content="on">
@@ -52,14 +52,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/aab1dc9e0b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/common/base.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/common_base.css" type="text/css" />
 
 <?php if( is_single() || is_category() ) { ?>
 	<?php // アワード ?>
 	<?php if ( in_category('award') || post_is_in_descendant_category( get_term_by( 'slug', 'award', 'category' ) )) : ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/award/base.css" type="text/css" />
 	<?php elseif ( in_category('professional') || post_is_in_descendant_category( get_term_by( 'slug', 'professional', 'category' ) )) : ?>
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/professional/base.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/professional_base.css" type="text/css" />
     <?php elseif ( in_category('campaign') || post_is_in_descendant_category( get_term_by( 'slug', 'campaign', 'category' ) )) : ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/campaign_<?php the_field('cp_main_image'); ?>.css" type="text/css" />
 	<?php endif ?>

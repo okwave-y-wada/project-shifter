@@ -20,7 +20,7 @@
 				<?php endwhile; ?>
 			</ul>
 			<?php do_action( 'habakiri_after_entries' ); ?>
-				
+
 			<?php get_template_part( 'modules/pagination' ); ?>
 	</div>
 
@@ -36,7 +36,7 @@
 				<?php endwhile; ?>
 			<!-- end .entries --></div>
 			<?php do_action( 'habakiri_after_entries' ); ?>
-				
+
 			<?php get_template_part( 'modules/pagination' ); ?>
 		</div>
 	</article>

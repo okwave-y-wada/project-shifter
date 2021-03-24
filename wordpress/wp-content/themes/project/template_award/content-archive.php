@@ -20,7 +20,7 @@
 				<?php endwhile; ?>
 			</ul>
 			<?php do_action( 'habakiri_after_entries' ); ?>
-				
+
 			<?php get_template_part( 'modules/pagination' ); ?>
 	</div>
 
@@ -28,7 +28,9 @@
 
 	<?php //上記以外の ?>
 	<article>
-		<div class="entry">content-archive.php
+
+
+		<div class="entry">
 			<?php do_action( 'habakiri_before_entries' ); ?>
 			<div class="entries entries--archive">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -36,7 +38,7 @@
 				<?php endwhile; ?>
 			<!-- end .entries --></div>
 			<?php do_action( 'habakiri_after_entries' ); ?>
-				
+
 			<?php get_template_part( 'modules/pagination' ); ?>
 		</div>
 	</article>

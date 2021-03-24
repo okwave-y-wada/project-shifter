@@ -1,6 +1,6 @@
 <?php
 /**
- * template  : サービス
+ * template  : utiility
  */
 ?>
 <?php
@@ -18,7 +18,7 @@
 <?php if( has_post_thumbnail() ) { ?>
   <meta property="og:image" content="<?php the_post_thumbnail_url( 'medium' ); ?>">
 <?php } else { ?>
-  <meta property="og:image" content="https://gazo.okwave.jp/okwave/images/logo/facebook_okwave.jpg">
+<meta property="og:image" content="https://gazo.okwave.jp/okwave/images/logo/facebook_okwave.jpg">
 <?php } ?>
 <meta property="og:title" content="<?php the_title(); ?> | <?php bloginfo( 'description' ); ?>">
 <meta property="og:description" content="<?php echo get_the_excerpt(); ?>">
@@ -31,7 +31,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/aab1dc9e0b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/common_base.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/service_base.css" type="text/css" />
-<!-- service header -->
 <?php wp_head(); ?>
+</head>
+<body class="utility page_<?php echo  $cat_slug; ?>">
 
+<?php do_action( 'habakiri_before_container' ); ?>
+<?php
+  $header_classes     = Habakiri::get_header_classses();
+  $site_branding_size = Habakiri::get_site_branding_size();
+  $gnav_size          = Habakiri::get_gnav_size();
+?>
+<header id="header" class="header">
+  <?php do_action( 'habakiri_before_header_content' ); ?>
+  <?php get_template_part( 'template_common/header-navi'); ?>
+  <?php do_action( 'habakiri_after_header_content' ); ?>
+</header>
+<?php do_action( 'habakiri_before_contents_content' ); ?>

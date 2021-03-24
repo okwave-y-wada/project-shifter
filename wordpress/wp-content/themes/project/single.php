@@ -31,9 +31,14 @@
 	<?php // Bizcs ?>
 	<?php get_template_part( 'template_bizcs/single-bizcs'); ?>
 
+<?php elseif ( in_category('service') || post_is_in_descendant_category( get_term_by( 'slug', 'service', 'category' ) )) : ?>
+	<?php // サービス ?>
+	<?php get_template_part( 'template_service/single-service'); ?>
+
   <?php elseif ( in_category('campaign') || post_is_in_descendant_category( get_term_by( 'slug', 'campaign', 'category' ) )) : ?>
 	<?php // campaign ?>
 	<?php get_template_part( 'template_campaign/single-campaign'); ?>
+
 
 <?php else : ?>
 	<?php // それ以外のページの場合 ?>

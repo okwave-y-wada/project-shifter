@@ -17,16 +17,26 @@
 	<?php // 紫舟さん ?>
 	<?php get_template_part( 'template_sisyu/archive-sisyu'); ?>
 
-<?php elseif ( in_category('award') || post_is_in_descendant_category( get_term_by( 'slug', 'award', 'category' ) )): ?>
-	<?php // アワード ?>
-	<?php get_template_part( 'template_award/archive-award'); ?>
+<?php elseif (is_category(array('annual_qa','annual_user','monthly_user'))) : ?>
+   <?php // アワード ?>
+  <?php get_template_part( 'template_award/archive-award'); ?>
+
+  <?php elseif (is_category(array('service'))) : ?>
+    <?php // アワード ?>
+    <?php get_template_part( 'template_service/archive-service'); ?>
 
 <?php else : ?>
 
 	<?php //それ以外のページの場合 home ?>
 	<div class="sub-page-contents home">
-		<?php get_template_part( 'blog_templates/archive/' . Habakiri::get( 'blog_template' ) ); ?>
-	</div>
+		<?php //get_template_part( 'blog_templates/archive/' . Habakiri::get( 'blog_template' ) ); ?>
+    <div class="wrap no_contents">
+      <p>
+        ページが見つかりませんでした。<br>
+        お探しのページが移動したか削除されています。<br>
+      </p>
+		</div>
+  </div>
 
 	<?php get_footer(); ?>
 

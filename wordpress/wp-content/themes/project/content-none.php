@@ -25,16 +25,10 @@ if ( is_404() ) {
 				<?php _e( 'The page you are looking for may be moved or deleted.', 'habakiri' ); ?><br />
 				<!-- ?php _e ( 'Please search this serch box.', 'habakiri' ); ? -->
 			</p>
-			<p>
-				<!-- ?php get_search_form(); ? -->
-			</p>
 		</div>
 	<?php elseif ( is_search() ) : ?>
 		<p>
 			<?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'habakiri' ); ?>
-		</p>
-		<p>
-			<?php get_search_form(); ?>
 		</p>
 	<?php else : ?>
 		<p>

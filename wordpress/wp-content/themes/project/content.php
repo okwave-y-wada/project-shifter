@@ -29,13 +29,17 @@
 	<?php // bizCs ?>
 	<?php get_template_part( 'template_bizcs/content-bizcs'); ?>
 
+	<?php elseif ( in_category('service') || post_is_in_descendant_category( get_term_by( 'slug', 'service', 'category' ) )) : ?>
+	<?php // bizCs ?>
+	<?php get_template_part( 'template_service/content-service'); ?>
+
 	<?php elseif ( in_category('campaign') || post_is_in_descendant_category( get_term_by( 'slug', 'campaign', 'category' ) )) : ?>
 	<?php // campaign ?>
 	<?php get_template_part( 'template_campaign/content-campaign'); ?>
 
+
 <?php else : ?>
 	<?php // それ以外のページの場合 content.php ?>
-
 <article <?php post_class( array( 'article', 'article--single' ) ); ?>>
 	<div class="entry">
 		<?php Habakiri::the_title(); ?>
@@ -45,14 +49,13 @@
 			<?php the_content(); ?>
 		</div>
 		<?php do_action( 'habakiri_after_entry_content' ); ?>
-	</div>
-
+  </div>
 	<?php get_template_part( 'modules/link-pages' ); ?>
 	<?php get_template_part( 'modules/related-posts' ); ?>
 	<?php
-	if ( comments_open() || pings_open() || get_comments_number() ) {
-		comments_template( '', true );
-	}
+	 //if ( comments_open() || pings_open() || get_comments_number() ) {
+	//	comments_template( '', true );
+	//}
 	?>
 </article>
 <?php endif; ?>

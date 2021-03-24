@@ -1,6 +1,6 @@
 <?php
 /**
- * template  : アワード
+ * template  : bizcs
  */
 ?>
 
@@ -11,7 +11,7 @@
 	$cat_slug = $current_cat->slug;
 ?>
 
-<body class="award <?php echo  $cat_slug; ?>">
+<body class=" <?php echo  $cat_slug; ?>">
 
 	<?php do_action( 'habakiri_before_container' ); ?>
 	<?php do_action( 'habakiri_before_header_content' ); ?>
@@ -23,7 +23,7 @@
 
 	<?php do_action( 'habakiri_before_contents_content' ); ?>
 
-	<div class="wrap award_page">
+	<div class="wrap">
 		<main class="main_contents contents_<?php echo $cat_slug; ?>">
 			<?php //get_template_part( 'modules/breadcrumbs' ); ?>
 			<h1 class="title" id="<?php echo  $cat_slug; ?>"><?php echo  $cat_name; ?><span><?php echo category_description(); ?></span></h1>
@@ -41,9 +41,9 @@
 		<?php //get_template_part( 'modules/link-pages' ); ?>
 		<?php //get_template_part( 'modules/related-posts' ); ?>
 		<?php
-		//	if ( comments_open() || pings_open() || get_comments_number() ) {
-		//		comments_template( '', true );
-		//	}
+			if ( comments_open() || pings_open() || get_comments_number() ) {
+				comments_template( '', true );
+			}
 		?>
 
 		<aside>

@@ -17,13 +17,16 @@
 
 	<?php if ( in_category('sisyu') || post_is_in_descendant_category( get_term_by( 'slug', 'sisyu', 'category' ) )): ?>
 		<?php // 紫舟さん footer ?>
-		<?php get_template_part( 'template_sisyu/footer-sisyu'); ?>
+	 	 <?php get_template_part( 'template_sisyu/footer-sisyu'); ?>
 
 	<?php elseif ( in_category('bizcs') || post_is_in_descendant_category( get_term_by( 'slug', 'bizcs', 'category' ) )): ?>
+    <?php if ( is_category(array('bizcs','contribute'))) : ?>
+      <?php get_template_part( 'template_common/footer-common'); ?>
+    <?php endif; ?>
 
 	<?php else : ?>
 		<?php get_template_part( 'template_common/footer-common'); ?>
-		
+
 	<?php endif; ?>
 
 
