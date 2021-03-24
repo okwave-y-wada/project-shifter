@@ -54,7 +54,7 @@ add_filter( 'emoji_svg_url', '__return_false' );
 // stortlinkは、投稿ページなどで短いURL(サイトのURL/?p=記事番号)を表示すタグ
 remove_action('wp_head', 'wp_shortlink_wp_head');
 // .recentcommentsを削除
-function remove_recent_comments_style() { 
+function remove_recent_comments_style() {
     global $wp_widget_factory;
     remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
 }
@@ -130,7 +130,7 @@ function mytheme_breadcrumb() {
         $cats = get_queried_object();
         $cat_id = $cats->parent;
     }
-    
+
     $cat_list = array();
     while ($cat_id != 0){
         $cat = get_category( $cat_id );
@@ -170,9 +170,9 @@ function add_post_column_title( $columns ) {
   }
   add_filter( 'manage_posts_columns', 'add_post_column_title' );
   add_action( 'manage_posts_custom_column', 'add_post_column', 10, 2 );
-  
 
- 
+
+
   /**
  * 投稿のスラッグの初期値をidにします。
  */
@@ -268,12 +268,12 @@ add_action("admin_head-post.php", "custom_admin_script");
 /**
  * 不要なページを無効化します。(404扱い)
  */
-add_action( 'template_redirect', 'status404' );
+// add_action( 'template_redirect', 'status404' );
 
- function status404() {
-   if ( is_author() || is_attachment()|| is_search() ||  is_category(array('utility','award','feature','professional','contribute','bizcs','news')) ) {
-     global $wp_query;
-     $wp_query->set_404();
-     status_header(404);
-   }
- }
+// function status404() {
+//   if ( is_author() || is_attachment()|| is_search() ||  is_category(array('utility','award','feature','professional','contribute','bizcs','news')) ) {
+//     global $wp_query;
+//     $wp_query->set_404();
+//     status_header(404);
+//   }
+// }
