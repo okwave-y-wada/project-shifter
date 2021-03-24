@@ -29,6 +29,7 @@
   }
 
   section {
+    width: 100%;
     max-width: $frame-max-width;
     padding: ($base-margin * 2) ($base-margin * 1.5) ;
     margin: $base-margin * 2 auto 0;
@@ -38,6 +39,7 @@
 
 
     @include screen-up(lg){
+      width: 100%;
       max-width: $frame-max-width;
       padding: 0 ($base-margin);
       margin: ($base-margin * 4.5) auto 0;

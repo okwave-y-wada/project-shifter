@@ -59,7 +59,7 @@ a {
     line-height: 32px;
     border: 1px solid #fff;
     border-radius: 40px;
-      
+
     @include screen-up(md){
       width: 158px;
       height: 40px;
@@ -246,7 +246,7 @@ input{
     }
 
     .footer {
-      background: $base-light-gray;
+      background: $base-light-gray !important;
     }
   }
 }
@@ -328,7 +328,7 @@ input{
           text-indent: -9999px;
 
 
-        
+
           &::before,
           &::after {
             position: absolute;
@@ -513,7 +513,7 @@ input{
         vertical-align: sub;
       }
 
-      li {     
+      li {
         &.site_info {
           @include screen-up(md){
             margin-bottom:32px;
@@ -542,7 +542,7 @@ input{
               line-height: 1.1;
               letter-spacing: 0.1em;
               background: none;
-              
+
               @include screen-up(md){
                 width: 88px;
                 height: 190px;
@@ -565,7 +565,7 @@ input{
     left: 0;
     z-index: 8000;
     width: 100%;
-    
+
 
     @include screen-up(md){
       position: static;
@@ -644,7 +644,7 @@ input{
 
 .footer{
   overflow: hidden;
-  background: #fff;
+  background: #fff !important;
 
 
   @include screen-up(md){
@@ -663,7 +663,7 @@ input{
       letter-spacing: normal;
       border-radius: 50%;
     }
-    
+
     a {
       position: relative;
       display: block;
@@ -677,7 +677,7 @@ input{
         z-index: 1;
       }
     }
-    
+
     .facebook {
       background: #3b5998;
 
@@ -690,7 +690,7 @@ input{
           height: 20px;
           content: "";
           background: url(#{$imageURL}/facebook.svg) no-repeat;
-    
+
           @include screen-down(sm){
             top: 8px;
             left: 11px;
@@ -700,10 +700,10 @@ input{
         }
       }
     }
-    
+
     .tweet {
       background: #55acee;
-    
+
       a {
         &::after {
           top: 9px;
@@ -712,7 +712,7 @@ input{
           height: 18px;
           content: "";
           background: url(#{$imageURL}/twitter.svg) no-repeat;
-    
+
           @include screen-down(sm){
             top: 10px;
             left: 10px;
@@ -845,7 +845,7 @@ input{
     color: #393b40;
     text-align: left;
     background: $base-light-gray;
-    
+
     h6 {
       margin-top: 0;
       margin-bottom: 8px;
@@ -902,7 +902,7 @@ input{
     padding-top: 56.25%;
     text-align: center;
 
-  
+
     video {
       position: absolute;
       top: 0;
@@ -910,20 +910,20 @@ input{
       z-index: 0;
       width: 100%;
     }
-  
+
     .sp_img {
       position: absolute;
       top: 0;
       left: 0;
       z-index: 0;
       width: 100%;
-  
+
       img {
         width: 100%;
         height: auto;
       }
     }
-  
+
     &::after {
       position: absolute;
       top: 0;
@@ -933,17 +933,17 @@ input{
       content: '';
       background: rgba(0, 0, 0, 0.5);
     }
-  
+
     .btn_area {
       margin: 48px 0 0;
       text-align: center;
       letter-spacing: -0.4em;
-  
+
       @include screen-down(sm){
         margin: 24px 0 0 0
       }
-  
-  
+
+
       .btn2 {
         box-sizing: border-box;
         display: inline-block;
@@ -952,7 +952,7 @@ input{
         letter-spacing: normal;
         background-color: transparent;
         transition: all 0.3s;
-  
+
         &:hover {
           background-color: rgba(255, 255, 255, 0.2);
         }
@@ -971,33 +971,33 @@ input{
     color: #fff;
     text-align: center;
     transform: translateY(-50%);
-    
+
     @include screen-up(md){
       padding-left:$navigation-width;
     }
-  
+
     h1 {
       padding: 0 24px;
       font-size: 300%;
       line-height: 74px;
-  
+
       @include screen-down(sm){
         font-size: 146%;
         line-height: 29px;
       }
-  
+
       @include screen-between(sm,md){
         font-size: 228%;
         line-height: 40px;
       }
-  
+
       @include screen-up(lg){
         font-size: 228%;
         line-height: 48px;
       }
     }
   }
-  
+
   // News & Topic
   .top_news {
     text-align: left;
@@ -1050,7 +1050,7 @@ input{
   }
 }
 
-// column 
+// column
 .column_list {
   display: flex;
   justify-content: space-between;

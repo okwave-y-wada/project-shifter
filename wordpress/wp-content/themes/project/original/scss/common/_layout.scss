@@ -3,11 +3,18 @@
 // layout --------------------------------------------
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Noto Sans JP','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ','Meiryo,ＭＳ ゴシック',helvetica,Arial,sans-serif;
   font-size: $base-font-size;
   font-weight:$font-weight-normal;
   line-height: $base-line-height;
   color: $base-color;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -35,6 +42,7 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     max-width: $frame-max-width;
     padding: $base-margin ($base-margin * 1.5);
     margin: 0 auto;
@@ -69,6 +77,7 @@ h1,h2,h3,h4,h5,h6,p{
 // main --------------------------------------------
 
 .wrap {
+  width: 100%;
   max-width: $frame-max-width;
   padding: ($base-margin * 2) ($base-margin * 1.5) ;
   margin: 0 auto;
@@ -91,6 +100,7 @@ h1,h2,h3,h4,h5,h6,p{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   font-size: $base-font-size-sm;
   color: #fff;
   text-align: center;
@@ -99,9 +109,21 @@ h1,h2,h3,h4,h5,h6,p{
   @include screen-up(md){
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     max-width: $frame-max-width;
     padding:0 $base-margin;
-    margin: 0 auto ($base-margin * 2);
+    //margin: auto auto ($base-margin * 2);
+    margin: auto auto 0;
+    text-align: right;
+  }
+
+  @include screen-up(lg){
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $frame-max-width;
+    padding: $base-margin $base-margin 0;
+    margin: auto auto 0;
     text-align: right;
   }
 
@@ -167,6 +189,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .footer {
+  width: 100%;
+  margin-bottom: $base-margin * 2;
+  // margin-top:auto;
   overflow: hidden;
   background:#fff !important;
 
@@ -176,9 +201,14 @@ h1,h2,h3,h4,h5,h6,p{
       font-size: $base-font-size-sm;
       line-height: 1.1;
 
+      @include screen-up(md){
+        padding:0 ($base-margin * 1.5) 0;
+      }
+
       @include screen-up(lg){
+        width: 100%;
         max-width: $frame-max-width;
-        padding: ($base-margin * 2) ($base-margin ) 0;
+        padding: $base-margin ($base-margin ) 0;
         margin: 0 auto ;
       }
     }
@@ -191,6 +221,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
 
     @include screen-up(lg){
+      width: 100%;
       max-width: $frame-max-width;
       padding: 0  $base-margin;
       margin: ($base-margin * 0.5) auto ($base-margin * 2);

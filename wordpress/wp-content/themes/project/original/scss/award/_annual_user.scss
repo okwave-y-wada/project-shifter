@@ -3,10 +3,11 @@ $gold-color :#d3b822;
 
 
 .award {
-  &.single_award { 
+  &.single_award {
     .wrap {
       &.layout20{
         .main_contents {
+          width: 100%;
           max-width: $frame-max-width;
           padding: 32px 24px;
           margin-right: auto;
@@ -89,7 +90,7 @@ $gold-color :#d3b822;
         display: block;
         font-size: $base-font-size;
         line-height: 1.4;
-                
+
         @include screen-up(lg){
           font-size: 40px;
         }
@@ -116,7 +117,7 @@ $gold-color :#d3b822;
     &_award {
       padding: 0;
       margin:0;
-        
+
       li {
         margin: 0;
         list-style: none;
@@ -137,14 +138,14 @@ $gold-color :#d3b822;
           }
         }
       }
-        
+
       figure {
         width: 64px;
         height: 64px;
         overflow: hidden;
         border:1px solid $base-gray-300;
         border-radius: 50%;
-        
+
         img {
           width: 100%;
           height: 100%;
@@ -205,7 +206,7 @@ $gold-color :#d3b822;
           width: 49%;
           padding:0 ;
           text-align: left;
-                    
+
 
           @include screen-up(md){
             width: 21%;
@@ -313,7 +314,7 @@ $gold-color :#d3b822;
           padding:0 ;
           margin-top: $base-margin;
           text-align: left;
-                    
+
           @include screen-up(md){
             width: 49%;
             text-align: center;
@@ -379,11 +380,11 @@ $gold-color :#d3b822;
 
       dt {
         width: 3em;
-                
+
         @include screen-up(md){
           font-size: $base-font-size-md;
         }
-                
+
 
         &::after {
           content: "位";
@@ -411,13 +412,13 @@ $gold-color :#d3b822;
         margin-right: auto;
         margin-left: auto;
       }
-            
+
 
       li {
         width:  49%;
         padding:0 $base-margin;
         margin-top: $base-margin;
-                
+
 
         @include screen-up(md){
           width: 24%;

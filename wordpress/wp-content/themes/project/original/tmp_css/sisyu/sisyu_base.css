@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap");
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -766,7 +767,7 @@ input.btn:hover {
     overflow: hidden;
     text-indent: -9999px;
     white-space: nowrap;
-    background: url(../../original/img/sisyu/sisyu.svg) no-repeat;
+    background: url(../original/img/sisyu/sisyu.svg) no-repeat;
   }
 }
 
@@ -853,7 +854,7 @@ input.btn:hover {
 
 .footer {
   overflow: hidden;
-  background: #fff;
+  background: #fff !important;
 }
 
 @media (min-width: 769px) {
@@ -901,7 +902,7 @@ input.btn:hover {
   width: 10px;
   height: 20px;
   content: "";
-  background: url(../../original/img/sisyu/facebook.svg) no-repeat;
+  background: url(../original/img/sisyu/facebook.svg) no-repeat;
 }
 
 @media (max-width: 489px) {
@@ -923,7 +924,7 @@ input.btn:hover {
   width: 18px;
   height: 18px;
   content: "";
-  background: url(../../original/img/sisyu/twitter.svg) no-repeat;
+  background: url(../original/img/sisyu/twitter.svg) no-repeat;
 }
 
 @media (max-width: 489px) {
@@ -961,7 +962,7 @@ input.btn:hover {
 }
 
 .footer_product_category li.frame {
-  background: url(../../original/img/sisyu/gaku.jpg) no-repeat right top;
+  background: url(../original/img/sisyu/gaku.jpg) no-repeat right top;
   background-size: 100%;
 }
 
@@ -972,7 +973,7 @@ input.btn:hover {
 }
 
 .footer_product_category li.engraving {
-  background: url(../../original/img/sisyu/tetu.jpg) no-repeat right top;
+  background: url(../original/img/sisyu/tetu.jpg) no-repeat right top;
   background-size: 100%;
 }
 
@@ -983,7 +984,7 @@ input.btn:hover {
 }
 
 .footer_product_category li.screen {
-  background: url(../../original/img/sisyu/byoub.jpg) no-repeat right top;
+  background: url(../original/img/sisyu/byoub.jpg) no-repeat right top;
   background-size: 100%;
 }
 
@@ -994,7 +995,7 @@ input.btn:hover {
 }
 
 .footer_product_category li.canvas {
-  background: url(../../original/img/sisyu/canvas.jpg) no-repeat right top;
+  background: url(../original/img/sisyu/canvas.jpg) no-repeat right top;
   background-size: 100%;
 }
 
@@ -1005,7 +1006,7 @@ input.btn:hover {
 }
 
 .footer_product_category li.makie {
-  background: url(../../original/img/sisyu/makie.jpg) no-repeat right top;
+  background: url(../original/img/sisyu/makie.jpg) no-repeat right top;
   background-size: 100%;
 }
 
@@ -1016,7 +1017,7 @@ input.btn:hover {
 }
 
 .footer_product_category li.limited {
-  background: url(../../original/img/sisyu/special.jpg) no-repeat right top;
+  background: url(../original/img/sisyu/special.jpg) no-repeat right top;
   background-size: 100%;
 }
 
@@ -1078,7 +1079,7 @@ input.btn:hover {
     height: calc(100% - 32px);
     overflow: hidden;
     content: "";
-    background: url(../../original/img/sisyu/sisyu_profile.jpg) right top no-repeat;
+    background: url(../original/img/sisyu/sisyu_profile.jpg) right top no-repeat;
     background-size: auto 100%;
   }
   .footer_airtist p {
@@ -1360,14 +1361,14 @@ input.btn:hover {
 
 @media (min-width: 769px) {
   .contents_about {
-    background: url(../../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right top;
+    background: url(../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right top;
     background-size: 500px auto;
   }
 }
 
 @media (min-width: 863px) {
   .contents_about {
-    background: url(../../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right top;
+    background: url(../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right top;
     background-size: 700px auto;
   }
 }
@@ -1420,7 +1421,7 @@ input.btn:hover {
     position: relative;
     padding-bottom: 40px;
     margin: -32px -24px 0 0;
-    background: url(../../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right -27px;
+    background: url(../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right -27px;
     background-size: 80%;
   }
   .contents_about h1::after {
@@ -1439,7 +1440,7 @@ input.btn:hover {
     position: relative;
     padding-bottom: 56px;
     margin: -32px -24px 0 0;
-    background: url(../../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right -27px;
+    background: url(../original/img/sisyu/sisyu_profile_big.jpg) no-repeat right -27px;
     background-size: 64%;
   }
   .contents_about h1::after {
