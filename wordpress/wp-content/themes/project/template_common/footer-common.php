@@ -6,10 +6,6 @@
   <?php // 他 footer ?>
     <?php do_action( 'habakiri_after_contents_content' ); ?>
     <!-- end #contents --></div>
-    <?php if(is_404()): ?>
-    <?php elseif (is_home()): ?>
-    <?php elseif (is_front_page()): ?>
-    <?php else: ?>
       <div class="pagetop">
         <div class="pagetop_link">
           <a href="#header">このページのトップへ</a>
@@ -32,7 +28,6 @@
             </ul>
           </div>
       </div>
-    <?php endif; ?>
     <footer class="footer">
       <?php do_action( 'habakiri_before_footer_content' ); ?>
       <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>

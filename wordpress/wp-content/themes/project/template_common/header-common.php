@@ -57,14 +57,14 @@
 <?php if( is_single() || is_category() ) { ?>
 	<?php // アワード ?>
 	<?php if ( in_category('award') || post_is_in_descendant_category( get_term_by( 'slug', 'award', 'category' ) )) : ?>
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/award/base.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/award_base.css" type="text/css" />
 	<?php elseif ( in_category('professional') || post_is_in_descendant_category( get_term_by( 'slug', 'professional', 'category' ) )) : ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/professional_base.css" type="text/css" />
     <?php elseif ( in_category('campaign') || post_is_in_descendant_category( get_term_by( 'slug', 'campaign', 'category' ) )) : ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/campaign_<?php the_field('cp_main_image'); ?>.css" type="text/css" />
 	<?php endif ?>
 <?php } ?>
-
+<?php wp_head(); ?>
 </head>
 <?php
 	// 記事のカテゴリー情報を取得する

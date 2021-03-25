@@ -50,4 +50,3 @@
       <?php include("template_common/header-common.php"); ?>
     <?php endif; ?>
   <?php endif; ?>
-
