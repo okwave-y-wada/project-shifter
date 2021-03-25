@@ -190,10 +190,15 @@ h1,h2,h3,h4,h5,h6,p{
 
 .footer {
   width: 100%;
-  margin-bottom: $base-margin * 2;
+  margin-top: auto;
+  margin-bottom: 0;
   // margin-top:auto;
   overflow: hidden;
   background:#fff !important;
+
+  .pagetop + & {
+    margin-top: 0;
+  }
 
   > div {
     &:first-of-type {
@@ -294,97 +299,47 @@ h1,h2,h3,h4,h5,h6,p{
 .pagination-wrapper {
   margin-top: $base-margin * 2;
   overflow: hidden;
-}
-
-// .pagination {
-//     display:flex;
-//     justify-content: center;
-//     padding: 0;
-//     margin: 0;
-//     list-style: none;
-
-//     >li {
-//         >span,
-//         >a {
-//             color: $base-link-color;
-
-//             &:hover {
-//                 color: $base-link-color;
-//             }
-//         }
-//     }
-
-//     li {
-//         margin: 4px;
-//         text-align: center;
-
-//         &.current {
-//             background: #ccc;
-//         }
 
 
-//         a,span {
-//             display: block;
-//             border: 1px solid $base-link-color;
-//             border-radius: 4px;
-//         }
 
-//         .page-numbers {
-//             min-width: $base-margin * 2;
-//             min-height: $base-margin * 2;
-//             line-height: $base-margin * 2;
+  .pagination{
+    padding:0;
+    margin-top: -($base-margin * 0.5);
+    text-align: center;
 
-//             &.dots {
-//                 background: none;
-//                 border: none;
-//             }
+    > li {
+      display: inline-block;
+      min-width: 34px;
+      height: 32px;
+      padding-right: $base-margin * 0.25;
+      padding-left: $base-margin * 0.25;
+      margin: 0 2px;
+      margin-top: $base-margin * 0.5;
+      line-height: 30px;
+      border: $btn-border-width solid $btn-border-color;
 
-//             &.current {
-//                 color: #fff;
-//                 background: $base-link-color;
-//             }
-//         }
-//     }
-// }
+      > span {
+        background: none;
+      }
 
+      .current {
+        color: $base-gray-700;
+        pointer-events: none;
+      }
 
-.pagination{
-  padding:0;
-  margin-top: -($base-margin * 0.5);
-  text-align: center;
-
-  > li {
-    display: inline-block;
-    min-width: 34px;
-    height: 32px;
-    padding-right: $base-margin * 0.25;
-    padding-left: $base-margin * 0.25;
-    margin: 0 2px;
-    margin-top: $base-margin * 0.5;
-    line-height: 30px;
-    border: $btn-border-width solid $btn-border-color;
-
-    > span {
-      background: none;
-    }
-
-    .current {
-      color: $base-gray-700;
-      pointer-events: none;
-    }
-
-    a,
-    span {
-      &:focus,
-      &:hover {
-        color: $base-link-color;
-        opacity: $base-hover-opacity;
+      a,
+      span {
+        &:focus,
+        &:hover {
+          color: $base-link-color;
+          opacity: $base-hover-opacity;
+        }
       }
     }
-  }
 
-  a {
-    display: block;
-    text-align: center;
+    a {
+      display: block;
+      text-align: center;
+    }
   }
 }

@@ -415,9 +415,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer {
   width: 100%;
-  margin-bottom: 32px;
+  margin-top: auto;
+  margin-bottom: 0;
   overflow: hidden;
   background: #fff !important;
+}
+
+.pagetop + .footer {
+  margin-top: 0;
 }
 
 .footer > div:first-of-type {
@@ -527,13 +532,13 @@ h1, h2, h3, h4, h5, h6, p {
   overflow: hidden;
 }
 
-.pagination {
+.pagination-wrapper .pagination {
   padding: 0;
   margin-top: -8px;
   text-align: center;
 }
 
-.pagination > li {
+.pagination-wrapper .pagination > li {
   display: inline-block;
   min-width: 34px;
   height: 32px;
@@ -545,23 +550,23 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid #ddd;
 }
 
-.pagination > li > span {
+.pagination-wrapper .pagination > li > span {
   background: none;
 }
 
-.pagination > li .current {
+.pagination-wrapper .pagination > li .current {
   color: #656565;
   pointer-events: none;
 }
 
-.pagination > li a:focus, .pagination > li a:hover,
-.pagination > li span:focus,
-.pagination > li span:hover {
+.pagination-wrapper .pagination > li a:focus, .pagination-wrapper .pagination > li a:hover,
+.pagination-wrapper .pagination > li span:focus,
+.pagination-wrapper .pagination > li span:hover {
   color: #06c;
   opacity: 0.64;
 }
 
-.pagination a {
+.pagination-wrapper .pagination a {
   display: block;
   text-align: center;
 }
