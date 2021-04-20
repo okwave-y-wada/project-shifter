@@ -5,7 +5,7 @@
 ?>
 
   <?php do_action( 'habakiri_after_contents_content' ); ?>
-
+  
   <footer class="footer">
       <?php get_template_part( 'template_sisyu/sns-sisyu'); ?>
       <ul class="footer_product_category">
@@ -25,7 +25,7 @@
           </li>
         <?php endforeach; ?>
       </ul>
-
+      
       <div class="footer_airtist">
         <?php dynamic_sidebar( 'footer-widget-area' ); ?>
       </div>

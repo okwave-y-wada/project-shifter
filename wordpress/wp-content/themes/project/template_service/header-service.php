@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="<?php bloginfo( 'description' ); ?>">
 <?php /* og:image（アイキャッチ画像がないページ用に専用画像を用意） */ ?>
 <?php if( has_post_thumbnail() ) { ?>
-  <meta property="og:image" content="<?php the_post_thumbnail_url( 'medium' ); ?>">
+  <meta property="og:image" content="<?php the_post_thumbnail_url( 'full' ); ?>">
 <?php } else { ?>
   <meta property="og:image" content="https://gazo.okwave.jp/okwave/images/logo/facebook_okwave.jpg">
 <?php } ?>

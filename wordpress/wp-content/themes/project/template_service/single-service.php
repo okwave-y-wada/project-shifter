@@ -204,9 +204,9 @@
 
   <?php endwhile; ?>
 <?php } else { ?>
-  <body class="page_<?php echo  $cat_slug; ?> single_service other"><span  id="header"></span>
+  <body class="page_<?php echo  $cat_slug; ?> single_service other">
 
-<?php } ?>
+<?php } ?><span  id="header"></span>
 
 <?php do_action( 'habakiri_before_container' ); ?>
 <?php do_action( 'habakiri_before_header_content' ); ?>

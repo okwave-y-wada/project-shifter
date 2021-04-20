@@ -1,5 +1,4 @@
 
-
 <?php
   $main_img = get_field('se_main_type');
   if ($main_img == 'type1') { ?>
