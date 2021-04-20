@@ -204,7 +204,7 @@
 
   <?php endwhile; ?>
 <?php } else { ?>
-  <body class="page_<?php echo  $cat_slug; ?> single_service other">
+  <body class="page_<?php echo  $cat_slug; ?> single_service other"><span  id="header"></span>
 
 <?php } ?>
 

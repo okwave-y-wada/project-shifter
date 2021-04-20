@@ -113,7 +113,7 @@ h1,h2,h3,h4,h5,h6,p{
     max-width: $frame-max-width;
     padding:0 $base-margin;
     //margin: auto auto ($base-margin * 2);
-    margin: auto auto 0;
+    margin: $base-margin auto 0;
     text-align: right;
   }
 

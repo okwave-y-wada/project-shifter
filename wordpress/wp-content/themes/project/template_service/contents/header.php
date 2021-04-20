@@ -2,7 +2,7 @@
   $se_header = get_field('se_header_type');
   if ($se_header == 'answers') { ?>
   <?php while(have_rows('se_header_button')):the_row();  ?>
-  <header class="service-header">
+  <header id="header" class="service-header">
     <div class="head-group">
       <div class="head-logo">
         <a href="https://okwave.jp/" target="_blank"><img src="/wp-content/themes/project/original/img/common/logo_okwave_60max_height_nomargin.svg" alt="OKWAVE_JP" ></a>
@@ -30,7 +30,7 @@
   </header>
   <?php endwhile; ?>
 <?php } else { ?>
-  <header id="header" class="header">
+  <header class="header">
     <div class="header_inner">
       <?php //template_common/header-navi.php変更あるときはこっちも変えてね ?>
       <div class="logo_okwave"><a href="https://okwave.jp/" target="_blank"><img src="/wp-content/themes/project/original/img/common/logo_okwave_60max_height_nomargin.svg" height="32"></a></div>

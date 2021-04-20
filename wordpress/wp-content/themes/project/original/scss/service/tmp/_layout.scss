@@ -1063,3 +1063,9 @@
     }
   }
 }
+
+.footer {
+  @include screen-down(lg){
+    margin-bottom: 32px;
+  }
+}

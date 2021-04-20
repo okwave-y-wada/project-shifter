@@ -1068,6 +1068,12 @@
   padding-left: 40px;
 }
 
+@media (max-width: 959px) {
+  .footer {
+    margin-bottom: 32px;
+  }
+}
+
 /* ---- bizcs  ---- */
 /* ---- answers  ---- */
 .hero-box {

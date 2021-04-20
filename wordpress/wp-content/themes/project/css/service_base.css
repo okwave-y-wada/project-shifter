@@ -1076,6 +1076,12 @@
   padding-left: 40px;
 }
 
+@media (max-width: 959px) {
+  .footer {
+    margin-bottom: 32px;
+  }
+}
+
 /* ---- bizcs  ---- */
 
 /* ---- answers  ---- */
@@ -1121,33 +1127,3 @@
     font-weight: 500;
   }
 }
-
-/* 800万 btn-area */
-
-/* マッチング */
-
-/* 移住 */
-
-/* task_result */
-
-/* 移住 about-box */
-
-/* 800万 about-box */
-
-/* マッチング about-box */
-
-/* 移住 list-up */
-
-/* 800万 list-up */
-
-/* マッチング list-up */
-
-/* 移住 case-site */
-
-/* 800 case-site */
-
-/* 移住 case-site */
-
-/* 800万 case-site */
-
-/* マッチング case-site */
