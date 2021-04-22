@@ -1,5 +1,4 @@
 <?php if( get_sub_field('cp_kind3_content1') ):  ?>
-  <section>
       <div class="container">
         <h2 class="headline"><span><?php the_sub_field('cp_kind3_content1'); ?></span></h2>
         <div class="page-link">
@@ -47,5 +46,4 @@
           <?php endif; ?>
         </div>
     </div>
-  </section>
 <?php endif; ?>

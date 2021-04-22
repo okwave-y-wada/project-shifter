@@ -1,3 +1,20 @@
+.cp-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding:$base-margin ($base-margin * 2);
+  line-height: 1;
+
+  &.bizcs {
+    img {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+    }
+  }
+}
 
 .wrap.campaign_page {
   width: 100%;
@@ -23,8 +40,8 @@
   }
 
   img {
-    width: auto;
-    max-width:100% ;
+    width: 100%;
+    max-width: max-content;
     height: auto;
   }
 
@@ -37,14 +54,12 @@
     clear: both;
     text-align: center;
 
-
     @include screen-up(lg){
       width: 100%;
       max-width: $frame-max-width;
       padding: 0 ($base-margin);
       margin: ($base-margin * 4.5) auto 0;
     }
-
 
     .flow-box {
       position: relative;
@@ -58,25 +73,13 @@
         padding: $base-margin * 2.5;
       }
     }
-  }
 
+    &:last-of-type {
+      margin-bottom: $base-margin * 2;
 
-  .hero-box {
-    background: url(../original/img/campaign/series/bg_type01.png);
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: auto 100% ;
-
-    @media (min-width: 760px) {
-      background-position: -50% 0;
-      background-size: 100% auto;
-    }
-
-    @include screen-up(lg){
-      background: url(../original/img/campaign/series/bg_type01_long.png);
-      background-repeat: no-repeat;
-      background-position: center 0;
-      background-size: 100% auto;
+      @include screen-up(lg){
+        margin-bottom: $base-margin * 4.5;
+      }
     }
   }
 
@@ -91,6 +94,8 @@
       text-align: center;
 
       img {
+        width: 650px;
+        max-width: max-content;
         margin-right: auto;
         margin-left: auto;
       }
@@ -219,6 +224,10 @@
     padding-top: $base-margin * 2;
     margin-top: $base-margin * 2;
     border-top: 1px solid $base-gray-300;
+
+    @include screen-up(md){
+      margin-top: $base-margin * 4;
+    }
 
     &::before {
       $height-size:40px;
@@ -362,14 +371,33 @@
       color: $white;
     }
 
+    &.btn_answer {
+      background: $answer-color;
+      border: none;
+
+      @include screen-up(md){
+        @include SquareButtonTypePc(){
+          width: auto;
+        }
+      }
+    }
+
+    &.btn_question {
+      background: $question-color;
+      border: none;
+
+      @include screen-up(md){
+        @include SquareButtonTypePc(){
+          width: auto;
+        }
+      }
+    }
+
+
     @include screen-up(lg){
       @include SquareButtonTypePc(){
         width: auto;
       }
-    }
-
-    &.btn_answer {
-      background: $answer-color;
     }
   }
 
@@ -461,3 +489,102 @@
     }
   }
 }
+
+
+
+// タイアップ
+.tieup_logo_box {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @include screen-up(md){
+    flex-direction: row;
+  }
+
+  img {
+    &:first-of-type {
+      width: auto;
+      max-height: 82px;
+    }
+  }
+
+  i {
+    margin: $base-margin;
+    font-size:$base-font-size-lg;
+
+    @include screen-up(md){
+      margin:0 ($base-margin * 1.5) 0 $base-margin;
+    }
+  }
+
+  + .tieup_body {
+    margin-top: $base-margin;
+  }
+}
+
+.free_headline_body {
+  margin-top: $base-margin * 4;
+}
+
+/* ------- */
+// .btn_block {
+//   margin-top: $base-margin * 2;
+//   text-align: center;
+// }
+
+// .btn_default {
+//   @include SquareButtonType();
+// }
+// .post_contents {
+//   .hero-contents-box {
+//     position: relative;
+//     height: 360px;
+
+//     @include screen-up(md){
+//       height: 572px;
+//     }
+
+//     h1 {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       z-index: 1;
+//       display: flex;
+//       flex-wrap: wrap;
+//       align-items: center;
+//       justify-content: center;
+//       width: 100%;
+
+//       @include screen-up(md){
+//         height: 540px;
+//       }
+
+//       img {
+//         width: 100%;
+//         max-width: 350px;
+
+//         @include screen-up(md){
+//           max-width: 650px;
+//         }
+//       }
+//     }
+
+//     dl {
+//       position: relative;
+//       z-index: 2;
+//       margin-top: 220px;
+
+//       @include screen-down(sm){
+//         margin-top: 200px;
+//       }
+
+//       @include screen-up(md){
+//         margin-top: 427px;
+//       }
+//     }
+//   }
+// }
+

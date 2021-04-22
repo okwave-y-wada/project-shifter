@@ -1,5 +1,4 @@
 <?php if( get_sub_field('cp_kind1_content1') ):  ?>
-  <section>
     <div class="container">
       <h2 class="headline"><span><?php the_sub_field('cp_kind1_content1'); ?></span></h2>
       <div class="flow-box">
@@ -28,7 +27,22 @@
                   </div>
                   <?php } ?>
                   <?php if ($type == 'rule_type2') { ?>
-                    ２だよ
+                    <div class="box effect-fadein">
+                      <div class="row">
+                          <div class="col1">
+                            <img src="/wp-content/themes/project/original/img/campaign/series/step_01_b.png" alt="">
+                          </div>
+                          <div class="col2">
+                              <h3 class="headline2"><?php the_sub_field('cp_rule_type2_sub_headline'); ?></h3>
+                              <p class="body-text"><?php the_sub_field('cp_rule_type2_body'); ?></p>
+                              <?php if( get_sub_field('cp_rule_type2_button_link') ):  ?>
+                              <div class="btn-box">
+                                  <a href="<?php the_sub_field('cp_rule_type2_button_link'); ?>" class="r_btn btn_question" target="_blank">質問する</a>
+                              </div>
+                            <?php endif; ?>
+                          </div>
+                      </div>
+                  </div>
                   <?php } ?>
                   <?php if ($type == 'rule_type3') { ?>
                     3だよ
@@ -48,6 +62,5 @@
         <?php endif; ?>
       </div>
     </div>
-  </section>
   <?php endif; ?>
 

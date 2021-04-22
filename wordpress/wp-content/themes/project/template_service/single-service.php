@@ -3,8 +3,6 @@
  * template  : サービス
  */
 ?>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-
 <style>
   <?php
     $main_img = get_field('se_main_type');

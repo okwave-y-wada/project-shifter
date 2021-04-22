@@ -22,7 +22,7 @@
   <?php get_template_part( 'template_award/archive-award'); ?>
 
   <?php elseif (is_category(array('service'))) : ?>
-    <?php // アワード ?>
+    <?php // service ?>
     <?php get_template_part( 'template_service/archive-service'); ?>
 
 <?php else : ?>

@@ -37,9 +37,13 @@
         <?php /* bizcsのcontributeカテゴリの記事 */ ?>
         <?php include("template_bizcs/header-bizcs.php"); ?>
 
-      <?php } elseif (in_category('service')) { ?>
+        <?php } elseif (in_category('service')) { ?>
         <?php /* serviceの記事 */ ?>
         <?php include("template_service/header-service.php"); ?>
+
+        <?php } elseif (in_category('campaign')) { ?>
+        <?php /*  campaign */ ?>
+        <?php include("template_campaign/header-campaign.php"); ?>
 
       <?php } else { ?>
         <?php /* 他 */ ?>

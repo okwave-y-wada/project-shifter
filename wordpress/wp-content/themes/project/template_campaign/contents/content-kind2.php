@@ -1,5 +1,3 @@
-<?php if( get_sub_field('cp_kind2_content1') ):  ?>
-  <section>
     <div class="secret-area">
         <div class="container">
           <h2  class="headline"><span><?php the_sub_field('cp_kind2_content1'); ?></span></h2>
@@ -26,5 +24,3 @@
             </div>
         </div>
     </div>
-  </section>
-<?php endif; ?>
