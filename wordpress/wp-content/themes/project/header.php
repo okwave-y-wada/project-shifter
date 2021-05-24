@@ -45,6 +45,10 @@
         <?php /*  campaign */ ?>
         <?php include("template_campaign/header-campaign.php"); ?>
 
+        <?php } elseif (in_category('qa')) { ?>
+        <?php /*  qa */ ?>
+        <?php include("template_campaign/header-qa.php"); ?>
+
       <?php } else { ?>
         <?php /* 他 */ ?>
         <?php include("template_common/header-common.php"); ?>

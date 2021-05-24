@@ -35,9 +35,13 @@
 	<?php // サービス ?>
 	<?php get_template_part( 'template_service/single-service'); ?>
 
-  <?php elseif ( in_category('campaign') || post_is_in_descendant_category( get_term_by( 'slug', 'campaign', 'category' ) )) : ?>
+  <?php elseif ( in_category('campaign')) : ?>
 	<?php // campaign ?>
 	<?php get_template_part( 'template_campaign/single-campaign'); ?>
+
+  <?php elseif ( in_category('qa') ) : ?>
+	<?php // campaign ?>
+	<?php get_template_part( 'template_campaign/single-qa'); ?>
 
 
 <?php else : ?>

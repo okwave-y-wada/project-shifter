@@ -1,6 +1,6 @@
 <?php
 /**
- * template  : アワード
+ * template  : キャンペーン
  */
 ?>
 	<style>

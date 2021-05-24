@@ -33,10 +33,13 @@
 	<?php // bizCs ?>
 	<?php get_template_part( 'template_service/content-service'); ?>
 
-	<?php elseif ( in_category('campaign') || post_is_in_descendant_category( get_term_by( 'slug', 'campaign', 'category' ) )) : ?>
+	<?php elseif ( in_category('campaign')) : ?>
 	<?php // campaign ?>
 	<?php get_template_part( 'template_campaign/content-campaign'); ?>
 
+	<?php elseif ( in_category('qa')) : ?>
+	<?php // qa ?>
+	<?php get_template_part( 'template_campaign/content-qa'); ?>
 
 <?php else : ?>
 	<?php // それ以外のページの場合 content.php ?>

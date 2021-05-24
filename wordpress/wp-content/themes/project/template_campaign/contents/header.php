@@ -3,7 +3,7 @@
   if ($cp_header == 'bizcs') { ?>
     <header class="cp-header bizcs">
         <div class="head-logo">
-          <a href="https://okbizcs.okwave.jp/" target="_blank"><img src="/wp-content/themes/project/original/img/common/logo_okbiz_cs.svg" alt="OKBIZ. for Community Support"></a>
+          <a href="https://okbizcs.okwave.jp/" target="_blank"><img src="/wordpress/wp-content/themes/project/original/img/common/logo_okbiz_cs.svg" alt="OKBIZ. for Community Support"></a>
         </div>
     </header>
 <?php } else { ?>

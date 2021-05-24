@@ -15,24 +15,28 @@
 // サイズ
 $screen-sm: 361px; // maxで360にしたいので
 $screen-md: 560px;
+$screen-base: 640px;
 $screen-lg: 960px;
 $screen-xlg: 1280px;
 
 $breakpointsUp:(
   sm: $screen-sm,
   md: $screen-md,
+  base:$screen-base,
   lg: $screen-lg,
   xlg: $screen-xlg,
 ) !default;
 
 $screen-max-sm: 360px;
 $screen-max-md: 559px;
+$screen-max-base: 639px;
 $screen-max-lg: 959px;
 $screen-max-xlg: 1279px;
 
 $breakpointsDown:(
   sm: $screen-max-sm,
   md: $screen-max-md,
+  base:$screen-max-base,
   lg: $screen-max-lg,
   xlg: $screen-max-xlg,
 ) !default;
