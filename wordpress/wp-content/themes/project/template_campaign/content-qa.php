@@ -22,7 +22,6 @@
         <?php if( get_sub_field('cp_qa_quest_contents_title') ):  ?><h2><?php the_sub_field('cp_qa_quest_contents_title'); ?></h2><?php endif; ?>
       <?php } ?>
 
-        <?php if( get_sub_field('cp_qa_ans_howto_num') ):  ?><p><?php the_sub_field('cp_qa_ans_howto_num'); ?></p><?php endif; ?>
 
       <?php if ($cp_howto == 'cp_qa_type_ans') {  ?>
         <?php if( get_sub_field('cp_qa_ans_step') ):  ?><?php the_sub_field('cp_qa_ans_step'); ?><?php endif; ?>
@@ -36,6 +35,7 @@
         <?php if( get_sub_field('cp_qa_quest_step_desc') ):  ?><?php the_sub_field('cp_qa_quest_step_desc'); ?><?php endif; ?>
       <?php } ?>
 
+      <?php if( get_sub_field('cp_qa_ans_howto_num') ):  ?><?php the_sub_field('cp_qa_ans_howto_num'); ?><?php endif; ?>
       <?php while(have_rows('cp_qa_enterprise_list')):the_row();  ?>
         <div class="enterprise_list">
           <ul>

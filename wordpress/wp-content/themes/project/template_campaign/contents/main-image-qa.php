@@ -6,16 +6,17 @@
   <div class="hero-box answer-cp">
     <div class="hero-contents-box container">
       <div class="hero-element">
-      <?php if( get_sub_field('cp_qa_period') ):  ?><div class="cp_date"><?php the_sub_field('cp_qa_period'); ?></div><?php endif; ?>
-        <div class="label"><?php if( get_sub_field('cp_qa_ans_sub_headline') ):  ?><?php the_sub_field('cp_qa_ans_sub_headline'); ?></div><?php endif; ?>
-        <h1>
-          <?php if( get_sub_field('cp_qa_ans_headline') ):  ?><?php the_sub_field('cp_qa_ans_headline'); ?><?php endif; ?>
-        </h1>
-        <div class="main_info">
-          <?php if( get_sub_field('cp_qa_present') ):  ?><?php the_sub_field('cp_qa_present'); ?><?php endif; ?>
-          <?php if( get_sub_field('cp_qa_num') ):  ?><?php the_sub_field('cp_qa_num'); ?><?php endif; ?>
+        <?php if( get_sub_field('cp_qa_period') ):  ?><div class="cp_date"><?php the_sub_field('cp_qa_period'); ?></div><?php endif; ?>
+          <div class="label"><?php if( get_sub_field('cp_qa_ans_sub_headline') ):  ?><?php the_sub_field('cp_qa_ans_sub_headline'); ?></div><?php endif; ?>
+          <h1>
+            <?php if( get_sub_field('cp_qa_ans_headline') ):  ?><?php the_sub_field('cp_qa_ans_headline'); ?><?php endif; ?>
+          </h1>
+          <div class="main_info">
+            <?php if( get_sub_field('cp_qa_present') ):  ?><?php the_sub_field('cp_qa_present'); ?><?php endif; ?>
+            <?php if( get_sub_field('cp_qa_num') ):  ?><?php the_sub_field('cp_qa_num'); ?><?php endif; ?>
           </div>
       </div>
+      <div class="speach"></div>
     </div>
   </div>
 <?php endwhile; ?>
@@ -34,6 +35,7 @@
           <?php if( get_sub_field('cp_qa_num') ):  ?><?php the_sub_field('cp_qa_num'); ?><?php endif; ?>
         </div>
       </div>
+      <div class="speach"></div>
     </div>
   </div>
 <?php endwhile; ?>

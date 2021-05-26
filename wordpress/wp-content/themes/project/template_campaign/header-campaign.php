@@ -31,7 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/aab1dc9e0b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/common_base.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/campaign_<?php the_field('cp_main_image'); ?>.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/campaign_campaign.css" type="text/css" />
 <!-- service header -->
 <?php wp_head(); ?>
 
