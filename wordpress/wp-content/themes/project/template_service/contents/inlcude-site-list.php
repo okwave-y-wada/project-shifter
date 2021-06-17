@@ -1,4 +1,4 @@
-<?php if( get_sub_field('site_sub_text') ):  ?>
+<?php if( get_sub_field('site_headline') ):  ?>
   <li>
     <?php if( get_sub_field('site_headline') ):  ?>
       <h3 class="headline3">

@@ -493,6 +493,18 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 0;
 }
 
+.menu-commonfooter-container .menu li.ft_cs {
+  display: none;
+}
+
+.bizcs .menu-commonfooter-container .menu li.ft_cs {
+  display: inline-block;
+}
+
+.bizcs .menu-commonfooter-container .menu li.ft_common {
+  display: none;
+}
+
 .menu-commonfooter-container .menu li.logo_company {
   display: block;
   margin: 16px 0 0;

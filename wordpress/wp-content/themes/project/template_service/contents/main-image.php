@@ -88,8 +88,6 @@
             <a href="<?php the_sub_field('se_main_button_link'); ?>" target="_blank" class="btn contact trial arrow-type01"><?php the_sub_field('se_main_button_label'); ?></a>
           </div>
           <?php endif; ?>
-
-
           <?php if( get_sub_field('se_main_image_sp') ):  ?>
             <div class="bg_img_sp">
                 <img src="<?php the_sub_field('se_main_image_sp'); ?>" alt="<?php the_sub_field('image_alt'); ?>" class="pcN">
@@ -97,6 +95,51 @@
           <?php endif; ?>
         </div>
       </div>
+    </div>
+  <?php endwhile; ?>
+  <?php } elseif ($main_img == 'type4') { ?>
+  <?php while(have_rows('se_main_type4_setting')):the_row();  ?>
+  <div class="hero-box hero-box_type4">
+  <div class="hero-contents-box container">
+    <div class="company-data">
+      <div class="company-logo">
+        <?php if( get_sub_field('se_main_logo') ):  ?>
+          <img src="<?php the_sub_field('se_main_logo'); ?>" alt="<?php the_sub_field('se_main_name'); ?>のロゴ画像">
+          <?php endif; ?>
+      </div>
+    </div>
+    <div class="company-text">
+      <?php if( get_sub_field('se_main_name') ):  ?>
+        <h2>
+          <span><?php the_sub_field('se_main_name'); ?></span>
+          <span>OKBIZ. for Community Support 活用事例</span>
+        </h2>
+      <?php endif; ?>
+      <?php if( get_sub_field('se_main_headline') ):  ?>
+      <h3><?php the_sub_field('se_main_headline'); ?></h3>
+      <?php endif; ?>
+      <div class="company-category">
+      <?php if( get_sub_field('se_main_industry') ):  ?>
+        <dl>
+          <dt>業種</dt>
+          <dd><?php the_sub_field('se_main_industry'); ?></dd>
+        </dl>
+        <?php endif; ?>
+        <?php if( get_sub_field('se_main_target') ):  ?>
+        <dl>
+          <dt>活用対象</dt>
+          <dd><?php the_sub_field('se_main_target'); ?></dd>
+        </dl>
+        <?php endif; ?>
+        <?php if( get_sub_field('se_main_problem') ):  ?>
+        <dl>
+          <dt>課題</dt>
+          <dd><?php the_sub_field('se_main_problem'); ?></dd>
+        </dl>
+        <?php endif; ?>
+      </div>
+    </div>
+    </div>
     </div>
   <?php endwhile; ?>
 <?php } ?>

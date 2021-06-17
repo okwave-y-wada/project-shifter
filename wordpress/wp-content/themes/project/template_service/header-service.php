@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@OKWAVE">
 <link href="https://gazo.okwave.jp/okwave/images/favicon.ico" type="image/vnd.microsoft.icon" rel="icon">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/aab1dc9e0b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/common_base.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/service_base.css" type="text/css" />

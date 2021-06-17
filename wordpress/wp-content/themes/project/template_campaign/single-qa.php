@@ -14,7 +14,7 @@
 	$cat_slug  = $cat[0]->category_nicename; // カテゴリースラッグ
 ?>
 
-<body class="campaign_qa"><span  id="header"></span>
+<body class="campaign_qa bizcs"><span  id="header"></span>
 <?php do_action( 'habakiri_before_container' ); ?>
 <?php do_action( 'habakiri_before_header_content' ); ?>
     <?php

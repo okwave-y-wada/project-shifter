@@ -5,7 +5,7 @@
     <header id="header" class="service-header">
     <div class="head-group">
       <div class="head-logo">
-        <a href="https://okwave.jp/" target="_blank"><img src="/wp-content/themes/project/original/img/common/logo_okwave_60max_height_nomargin.svg" alt="OKWAVE_JP" ></a>
+        <a href="https://okwave.jp/" target="_blank"><img src="/wordpress/wp-content/themes/project/original/img/common/logo_okwave_60max_height_nomargin.svg" alt="OKWAVE_JP" ></a>
       </div>
       <?php if( get_sub_field('se_header_button_text') ):  ?>
         <div class="head-btn">
@@ -21,7 +21,7 @@
     <header class="service-header">
       <div class="head-group">
         <div class="head-logo">
-          <a href="https://okbiz.jp/solutions/okbiz-community-support/" target="_blank"><img src="/wp-content/themes/project/original/img/common/logo_okbiz_cs.svg" alt="OKBIZ. for Community Support"></a>
+          <a href="/service/okbiz-community-support/" target="_blank"><img src="/wordpress/wp-content/themes/project/original/img/common/logo_okbiz_cs.svg" alt="OKBIZ. for Community Support"></a>
         </div>
         <div class="head-btn">
           <a href="<?php the_sub_field('se_header_button_link'); ?>" target="_blank"><?php the_sub_field('se_header_button_text'); ?></a>

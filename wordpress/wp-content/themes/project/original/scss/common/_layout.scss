@@ -260,6 +260,20 @@ h1,h2,h3,h4,h5,h6,p{
         margin-right: 0;
       }
 
+      &.ft_cs {
+        display: none;
+
+        .bizcs & {
+          display: inline-block;
+        }
+      }
+
+      &.ft_common {
+        .bizcs & {
+          display: none;
+        }
+      }
+
       &.logo_company {
         display: block;
         margin:$base-margin 0 0;
@@ -299,8 +313,6 @@ h1,h2,h3,h4,h5,h6,p{
 .pagination-wrapper {
   margin-top: $base-margin * 2;
   overflow: hidden;
-
-
 
   .pagination{
     padding:0;
