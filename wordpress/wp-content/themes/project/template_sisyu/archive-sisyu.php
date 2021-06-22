@@ -12,6 +12,10 @@
 ?>
 
 <body class="sisyu <?php echo  $cat_slug; ?>">
+<?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
 <?php do_action( 'habakiri_before_container' ); ?>
 <?php do_action( 'habakiri_before_header_content' ); ?>
     <?php
@@ -94,7 +98,7 @@
 			?>
 			<h1 class="title" id="<?php echo  $cat_slug; ?>"><?php echo  $cat_name; ?></h1>
 			<p><?php echo $description;?></p>
-			
+
 			<?php
 				//$catに現在のカテゴリのIDが格納されている
 				$this_cat_children = get_term_children( $cat, 'category' );//子カテゴリを取得する
@@ -241,7 +245,7 @@
 				endif;
 			?>
 		</main>
-	
+
 <?php elseif (is_category('sisyu')): ?>
 	<div class="wrap top_page">
 		<div class="main_mv">
@@ -258,12 +262,12 @@
 				<source src="<?php echo get_stylesheet_directory_uri(); ?>/original/movies/hero.mp4" type="video/mp4">
 			</video>
 		</div>
-		
+
 				<?php
 					$cat_id = get_category_by_slug("news");
 					$cat_id = $cat_id->cat_ID;
 					$thisCat = get_category($cat_id);
-					
+
 					if ($thisCat->count != 0 ) { //上記で指定したカテゴリIDの投稿が 0 以外だったときの処理
 						echo <<<EOD
 						<main class="main_contents"><div class="top_news">
@@ -274,8 +278,8 @@ EOD;
 						$newslist = get_posts( array(
 							'cat' => $cat_id
 						));
-						
-				
+
+
 						foreach( $newslist as $post ):
 						setup_postdata( $post );
 

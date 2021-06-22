@@ -163,6 +163,10 @@
 ?>
 
 <body class="award page_<?php echo  $cat_slug; ?> single_award">
+<?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
 <?php do_action( 'habakiri_before_container' ); ?>
 <?php do_action( 'habakiri_before_header_content' ); ?>
     <?php
@@ -177,7 +181,7 @@
 	<?php else : ?>
 		<div class="wrap award_page">
 	<?php endif; ?>
-	
+
 
 	<main class="main_contents contents_<?php echo esc_attr($post->post_name); ?>">
 		<?php
@@ -197,7 +201,7 @@
 	<?php else : ?>
 		<aside>
 	<?php endif; ?>
-	
+
 		<div class="side_inner">
 			<?php
 				global $post;
@@ -236,7 +240,7 @@
 				}
 				$post = $tmp_post;
 			?>
-			
+
 		</div>
 		<?php get_sidebar(); ?>
 	</aside>

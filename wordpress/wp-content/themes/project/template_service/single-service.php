@@ -194,16 +194,25 @@
   if ($se_header == 'answers') { ?>
   <?php while(have_rows('se_header_button')):the_row();  ?>
   <body class="page_<?php echo  $cat_slug; ?> single_service answers">
-
+  <?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
 <?php endwhile; ?>
   <?php } elseif ($se_header == 'bizcs') { ?>
     <?php while(have_rows('se_header_button')):the_row();  ?>
     <body class="page_<?php echo  $cat_slug; ?> single_service bizcs">
-
+    <?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
   <?php endwhile; ?>
 <?php } else { ?>
   <body class="page_<?php echo  $cat_slug; ?> single_service other">
-
+  <?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
 <?php } ?><span  id="header"></span>
 
 <?php do_action( 'habakiri_before_container' ); ?>

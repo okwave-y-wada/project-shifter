@@ -34,7 +34,10 @@
 <?php wp_head(); ?>
 </head>
 <body class="utility page_<?php echo  $cat_slug; ?>">
-
+<?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
 <?php do_action( 'habakiri_before_container' ); ?>
 <?php
   $header_classes     = Habakiri::get_header_classses();

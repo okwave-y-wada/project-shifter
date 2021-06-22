@@ -14,7 +14,12 @@
 	$cat_slug  = $cat[0]->category_nicename; // カテゴリースラッグ
 ?>
 
-<body class="campaign_qa bizcs"><span  id="header"></span>
+<body class="campaign_qa bizcs">
+<?php // !-- Google Tag Manager (noscript) -- ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R683KK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<?php //-- End Google Tag Manager (noscript) -- ?>
+<span  id="header"></span>
 <?php do_action( 'habakiri_before_container' ); ?>
 <?php do_action( 'habakiri_before_header_content' ); ?>
     <?php
