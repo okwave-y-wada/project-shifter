@@ -3,6 +3,7 @@
 $cs-color:#0b3880;
 $cs-bg-color:#edf4fa;
 
+
 // サポートコミュニティを簡単構築
 .contents_okbiz-community-support {
   * {
@@ -65,6 +66,7 @@ $cs-bg-color:#edf4fa;
         font-size: 22px;
       }
     }
+
 
     &.hero-box_type3 {
       .hero-contents-box{
@@ -1194,3 +1196,58 @@ $cs-bg-color:#edf4fa;
 //   transform: translateY(-50%);
 // }
 
+/* 800万 btn-area */
+// .btn-area {
+//   background: #eaeff5;
+//   // 800万
+//   .btn-list{
+//     a {
+//       font-size: 16px;
+//       font-weight: $font-weight-bold;
+//       color: #fff;
+//       background: #e73768;
+
+//       @include screen-up(lg){
+//         font-size: 24px;
+//       }
+
+//       &:hover {
+//         color: #fff;
+//       }
+//     }
+//   }
+// }
+
+.hero-box_type2 {
+  .hero-element{
+    h1 {
+      font-size: 27px;
+      font-weight: $font-weight-bold;
+      line-height: 1.4;
+      color: #000;
+
+      br {
+        display: none;
+      }
+
+      @include screen-up(lg){
+        font-size: 72px;
+        font-weight: $font-weight-xbold;
+
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .sub-lead {
+    font-size: 18px;
+    font-weight: $font-weight-bold;
+
+    @include screen-up(lg){
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
