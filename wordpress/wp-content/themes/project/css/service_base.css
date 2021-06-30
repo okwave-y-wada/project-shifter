@@ -1070,8 +1070,8 @@
 }
 
 .footer_area .footer-btn {
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 @media (max-width: 959px) {
@@ -1782,14 +1782,14 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1000px;
-    padding: 4.5rem 16px 0;
+    padding: 112px 16px 32px;
     margin: 0 auto;
     overflow: hidden;
   }
 }
 
 .cs_interview .hero-box.hero-box_type4 .company-data {
-  padding: 32px 16px;
+  padding: 80px 16px 32px;
   text-align: center;
 }
 
@@ -2209,6 +2209,7 @@
 }
 
 .cs_interview .company-data-b-business {
+  width: 40%;
   padding: 1rem 0.8rem;
   margin: 0;
   font-size: 0.8rem;
@@ -2281,7 +2282,7 @@
   width: 20px;
   height: 20px;
   content: "";
-  background: url(..//original/img/sevice/okbiz-community-support/icon_arrow_wh.svg) no-repeat center;
+  background: url(../original/img/sevice/okbiz-community-support/icon_arrow_wh.svg) no-repeat center;
   background-size: cover;
   border: none;
   transform: translateY(-50%);

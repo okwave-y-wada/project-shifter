@@ -654,14 +654,14 @@ $cs-bg-color:#edf4fa;
           align-items: center;
           justify-content: space-between;
           max-width: 1000px;
-          padding: 4.5rem $base-margin 0;
+          padding: ($base-margin * 7) $base-margin ($base-margin * 2);
           margin: 0 auto;
           overflow: hidden;
         }
       }
 
       .company-data {
-        padding: ($base-margin * 2) $base-margin;
+        padding: ($base-margin * 5) $base-margin ($base-margin * 2);
         text-align: center;
 
         @include screen-up(base){
@@ -1094,7 +1094,7 @@ $cs-bg-color:#edf4fa;
                 width: 20px;
                 height: 20px;
                 content: "";
-                background: url(..//original/img/sevice/okbiz-community-support/icon_arrow_wh.svg) no-repeat center;
+                background: url(../original/img/sevice/okbiz-community-support/icon_arrow_wh.svg) no-repeat center;
                 background-size: cover;
                 border: none;
                 transform: translateY(-50%);
