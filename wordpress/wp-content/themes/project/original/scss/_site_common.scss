@@ -99,6 +99,7 @@ $btn-border-color: $base-border-color;
   border-radius: $btn-square-border-radius;
 
   @include screen-down(sm) {
+    min-width: auto;
     padding: 0 4px;
     font-size: $base-font-size-sm;
   }

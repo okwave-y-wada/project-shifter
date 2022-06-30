@@ -29,10 +29,14 @@
   font-size: $base-font-size-sm;
   background: $white;
 
-
   @include screen-up(lg){
     padding-right:0;
     padding-left:0;
+  }
+
+  &.plus {
+    padding-top:0;
+    padding-bottom:0;
   }
 }
 
@@ -71,7 +75,7 @@
 
   .bizcs & {
     img {
-      width: 400px;
+      width: 280px;
     }
   }
 
@@ -144,7 +148,7 @@
     @include screen-up(lg){
       position: relative;
       padding-top: 570px;
-      margin-top: 80px;
+      margin-top: 65px;
       background-position: bottom center;
       background-size: cover;
     }

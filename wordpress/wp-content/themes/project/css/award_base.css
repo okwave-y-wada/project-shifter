@@ -99,6 +99,7 @@ dl {
 
 @media (max-width: 360px) {
   .award_page .btn {
+    min-width: auto;
     padding: 0 4px;
     font-size: 13px;
   }

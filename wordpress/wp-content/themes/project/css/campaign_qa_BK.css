@@ -18,6 +18,10 @@
   line-height: 1;
 }
 
+.cp-header.bizcs {
+  padding: 0 32px;
+}
+
 .cp-header.bizcs img {
   width: 100%;
   max-width: 360px;
@@ -1036,6 +1040,7 @@ article .cs-s_CP_btn a {
 
 @media (max-width: 360px) {
   article .cs-s_CP_btn a {
+    min-width: auto;
     padding: 0 4px;
     font-size: 13px;
   }

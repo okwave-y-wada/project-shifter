@@ -10,6 +10,10 @@
   line-height: 1;
 }
 
+.cp-header.bizcs {
+  padding: 0 32px;
+}
+
 .cp-header.bizcs img {
   width: 100%;
   max-width: 360px;
@@ -41,7 +45,7 @@
 
 .post_contents img {
   width: 100%;
-  max-width: max-content;
+  max-width: 256px;
   height: auto;
 }
 
@@ -207,6 +211,7 @@
 }
 
 .post_contents .row .col1 {
+  width: 100%;
   text-align: center;
 }
 
@@ -227,6 +232,10 @@
   .post_contents .row .col1 img {
     width: 72%;
   }
+}
+
+.post_contents .row .col2 {
+  width: 100%;
 }
 
 @media (min-width: 560px) {
@@ -397,6 +406,7 @@
 
 @media (max-width: 360px) {
   .post_contents .r_btn {
+    min-width: auto;
     padding: 0 4px;
     font-size: 13px;
   }
@@ -567,7 +577,7 @@
 
 @media (min-width: 560px) {
   .tieup_logo_box i {
-    margin: 0 24px 0 16px;
+    margin: 0 16px;
   }
 }
 

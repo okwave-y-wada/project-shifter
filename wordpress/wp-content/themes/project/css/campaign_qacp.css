@@ -28,13 +28,13 @@
   height: auto;
 }
 
-.wrap.campaign_qa_page {
+.wrap.campaign_page {
   width: 100%;
   padding: 0 0;
 }
 
 @media (min-width: 960px) {
-  .wrap.campaign_qa_page {
+  .wrap.campaign_page {
     width: 100%;
     max-width: 100%;
     padding: 0 0;
@@ -696,12 +696,12 @@ article section h2 {
   }
 }
 
-article section.content2 {
+article section.content3 {
   overflow: hidden;
   background: #f7f7f7;
 }
 
-article section.content2 dl {
+article section.content3 dl {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -710,14 +710,14 @@ article section.content2 dl {
 }
 
 @media (min-width: 640px) {
-  article section.content2 dl {
+  article section.content3 dl {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-article section.content2 dl dt,
-article section.content2 dl dd {
+article section.content3 dl dt,
+article section.content3 dl dd {
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -725,62 +725,62 @@ article section.content2 dl dd {
 }
 
 @media (min-width: 640px) {
-  article section.content2 dl dt,
-  article section.content2 dl dd {
+  article section.content3 dl dt,
+  article section.content3 dl dd {
     margin-top: 32px;
   }
 }
 
-article section.content2 dl dt {
+article section.content3 dl dt {
   font-weight: 700;
 }
 
 @media (max-width: 639px) {
-  article section.content2 dl dt {
+  article section.content3 dl dt {
     margin-top: 32px;
   }
 }
 
 @media (min-width: 640px) {
-  article section.content2 dl dt {
+  article section.content3 dl dt {
     width: 25%;
   }
 }
 
 @media (min-width: 960px) {
-  article section.content2 dl dt {
+  article section.content3 dl dt {
     width: 20%;
   }
 }
 
 @media (min-width: 640px) {
-  article section.content2 dl dd {
+  article section.content3 dl dd {
     width: 75%;
     padding-left: 16px;
   }
 }
 
 @media (min-width: 960px) {
-  article section.content2 dl dd {
+  article section.content3 dl dd {
     width: 80%;
   }
 }
 
-article section.content2 dl ul {
+article section.content3 dl ul {
   padding-left: 24px;
   margin: 0;
   list-style: disc;
 }
 
-article section.content2 dl ul li {
+article section.content3 dl ul li {
   margin-top: 8px;
 }
 
-article section.content2 dl ul li:first-of-type {
+article section.content3 dl ul li:first-of-type {
   margin-top: 0;
 }
 
-article section.content1 p, article section.content3 p {
+article section.content1 p{
   margin: 16px 0;
 }
 

@@ -8,6 +8,8 @@
   line-height: 1;
 
   &.bizcs {
+    padding:0 ($base-margin * 2);
+
     img {
       width: 100%;
       max-width: 360px;
@@ -41,7 +43,7 @@
 
   img {
     width: 100%;
-    max-width: max-content;
+    max-width: 256px;
     height: auto;
   }
 
@@ -194,6 +196,7 @@
     $left-size:44%;
 
     .col1 {
+      width: 100%;
       text-align: center;
 
       @include screen-up(md){
@@ -213,6 +216,8 @@
     }
 
     .col2 {
+      width: 100%;
+
       @include screen-up(md){
         width: calc(100% - #{$left-size});
       }
@@ -516,7 +521,7 @@
     font-size:$base-font-size-lg;
 
     @include screen-up(md){
-      margin:0 ($base-margin * 1.5) 0 $base-margin;
+      margin:0 $base-margin;
     }
   }
 

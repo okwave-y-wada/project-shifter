@@ -39,6 +39,11 @@
   }
 }
 
+.service-header.plus {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .head-group {
   display: flex;
   align-items: center;
@@ -78,7 +83,7 @@
 }
 
 .bizcs .head-logo img {
-  width: 400px;
+  width: 280px;
 }
 
 .answers .head-logo img {
@@ -146,7 +151,7 @@
   .hero-box.hero-box_type3 {
     position: relative;
     padding-top: 570px;
-    margin-top: 80px;
+    margin-top: 65px;
     background-position: bottom center;
     background-size: cover;
   }
